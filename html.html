@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="mysite.local" content="mysite.local" />
+  <title>Audioking</title>
+  <style></style>
+  <link rel="stylesheet" href="css.css" />
+  
+</head>
+<body>
+
+  <h1>AudioKing</h1>
+
+  <!-- مشغل الصوت -->
+  <audio id="player" controls>
+    <source src="audio1/start.mp3" type="audio/mpeg">
+    متصفحك لا يدعم الصوت.
+  </audio>
+
+  <!-- قائمة الأغاني -->
+  <ul id="playlist">
+    ""
+    <li onclick="playSong('audio1/1.mp3')">
+      <span class="ic">▶️</span>
+      sound 1</li>
+    <li onclick="playSong('audio1/2.mp3')">
+      <span class="ic">▶️</span>
+      sound 2</li>
+    <li onclick="playSong('audio1/3.mp3')">
+      <span class="ic">▶️</span>
+      sound 3</li>
+    <li onclick="playSong('audio1/start.mp3')">
+      <span class="ic">▶️</span>
+      start</li>
+  </ul>
+
+  <script src="js.js"></script>
+
+</body>
+</html>

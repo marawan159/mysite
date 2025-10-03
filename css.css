@@ -1,0 +1,56 @@
+body{ 
+  background-image:url('IMG/IMG-20250921-WA0014.jpg');
+  background-size: cover;
+  background-repeat :no-repeat;
+  background-position: center;
+  font-family: Arial, sans-serif; 
+  text-align: center; padding: 20px; 
+  margin: 0;
+  height: 50vh;
+  color: #fff;
+}
+
+h1{
+  text-shadow:3px 3px 1px black;
+  margin-bottom: 20px;
+}
+
+ul { 
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 0;
+}
+li {
+  margin: 8px 0;
+  cursor: pointer; 
+  color: white;
+  /* text-decoration: underline;*/
+  
+  width: 250px;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transition 0.3s, background 0.3s;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  gap: 12px;
+}
+
+/* تاثير عند المرور */
+li:hover {
+  transform: scale(1.05);
+  background: rgba(255, 140, 0, 0.8); /* لون برتقالي عند التمرير */
+  color: white;
+}
+
+li.active{
+  background: rgba(0, 200, 0, 0.8);
+}
+.ic{
+  font-size: 20px;
+}
